@@ -1,0 +1,10 @@
+.btn{
+    padding: 12px 25px;
+    background: $circle-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &_invisible{
+        cursor: pointer;
+        padding: 12px 0 12px 20px;
+    }
+}
+    

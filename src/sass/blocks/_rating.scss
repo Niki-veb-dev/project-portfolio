@@ -1,0 +1,40 @@
+.rating {
+    padding-top: 128px;
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3,350px);
+        grid-template-rows: repeat(2,70px);
+        justify-content: space-between;
+        align-content: space-between;
+        row-gap: 29px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template: 21px 14px / 200px 35px;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    &__title {
+        padding-left: 13px;
+        position: relative;
+        @include before_circle;
+    }
+
+    &__counter {
+    }
+    &__line{
+        width: 350px;
+        height: 14px;
+        background: #E8E4DE;
+        border-radius: 4px;
+        grid-column: 1/2;
+        span{
+            display: block;
+            background-color: $circle-color;
+            border-radius: 4px;
+            height: 100%;
+        }
+    }
+}

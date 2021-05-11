@@ -1,0 +1,101 @@
+.resume {
+    padding-top: 120px;
+        &__title {
+            position: relative;
+            text-align: center;
+            @include before_circle;
+            &:before{
+                top: -6px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+
+		&__wrapper {
+            padding:65px 65px 0 65px;
+            display: grid;
+            grid-template-columns:repeat(2,425px);
+            column-gap: 135px;
+		}
+
+		&__column {
+            ul{
+                list-style-type: none;
+                li{
+                    position: relative;
+                    &:after{
+                        content: '';
+                        width: 1px;
+                        height: calc(100% + 16px);
+                        position: absolute;
+                        background-color: black;
+                        top: -15.5px;
+                        left: 7px;
+                    }
+                }
+            }
+		}
+
+		&__column-title {
+            padding-left: 35px;
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $circle-color;
+                border-radius: 100%;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+		}
+
+		&__item {
+            position: relative;
+            &:before{
+                position: absolute;
+                content : '';
+                height: 1px;
+                width: 37.1px;
+                background-color: black;
+                top: 64px;
+                left: 8px;
+            }
+		}
+
+		&__item-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+		}
+
+		&__item-icon {
+            position: absolute;
+            top: 506x;
+            left: 45px;
+            @include before_circle;
+            img{
+                position: absolute;
+                top: 14px;
+                left: 17px;
+            }
+		}
+
+		&__item-location {
+
+		}
+
+		&__body {
+            margin-top: 12px;
+            padding: 0px 0 0 43px;
+            font-size: 12px;
+            line-height: 18px;
+		}
+}
