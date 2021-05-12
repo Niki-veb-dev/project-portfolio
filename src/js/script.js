@@ -48,4 +48,5 @@ let incr =10,
     console.log(5%2);
 let isChecked = true,
     isClose = false;
-    console.log(isChecked || !isClose); 
+    console.log(isChecked || !isClose);  
+let change;
